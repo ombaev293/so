@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Свадьба Анны и Сергея</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        header {
+            background-color: #ff7f50;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            animation: slideIn 1s ease-out;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin: 0;
+        }
+
+        nav {
+            background-color: #333;
+            padding: 10px 0;
+            text-align: center;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            padding: 10px;
+            font-size: 1.2rem;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #555;
+            border-radius: 5px;
+            transform: scale(1.1);
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            color: #ff7f50;
+            margin-bottom: 20px;
+            opacity: 0;
+            animation: fadeIn 2s forwards;
+        }
+
+        .about, .gallery, .event-info, .guestbook {
+            margin-bottom: 40px;
+        }
+
+        .about p, .event-info p, .guestbook p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            opacity: 0;
+            animation: fadeInUp 1.5s ease-in-out forwards;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            opacity: 0;
+            animation: fadeInUp 2s ease-in-out forwards;
+        }
+
+        .gallery img {
+            width: 100%;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            font-size: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            opacity: 0;
+            animation: fadeInUp 2s ease-in-out forwards;
+        }
+
+        .form-group button {
+            padding: 10px 20px;
+            background-color: #ff7f50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            opacity: 0;
+            animation: fadeInUp 2.5s ease-in-out forwards;
+        }
+
+        .form-group button:hover {
+            background-color: #e76a39;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        footer a {
+            color: #ff7f50;
+            text-decoration: none;
+        }
+
+        @media screen and (max-width: 768px) {
+            .gallery {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+
+            nav a {
+                font-size: 1rem;
+            }
+        }
+
+        /* Анимации */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideIn {
+            0% {
+                transform: translateX(-100%);
+            }
+            100% {
+                transform: translateX(0);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Свадьба Анны и Сергея</h1>
+        <p>Присоединяйтесь к нашему особому дню!</p>
+    </header>
+
+    <nav>
+        <a href="#about">О нас</a>
+        <a href="#gallery">Галерея</a>
+        <a href="#event">Событие</a>
+        <a href="#guestbook">Гостевая книга</a>
+        <a href="#contact">Контакты</a>
+    </nav>
+
+    <div class="container">
+        <!-- Раздел "О нас" -->
+        <section id="about" class="about">
+            <h2 class="section-title">О нас</h2>
+            <p>Мы - Анна и Сергей, и мы рады пригласить вас на нашу свадьбу! Наша история началась много лет назад, и вот, наконец, мы решили связать наши жизни в этот волнующий день. Мы очень счастливы, что можем поделиться этим моментом с вами!</p>
+        </section>
+
+        <!-- Раздел "Галерея" -->
+        <section id="gallery" class="gallery">
+            <div>
+                <img src="C:\Users\21\Downloads\OIP (3).jfif" alt="Фото 1">
+            </div>
+            <div>
+                <img src="C:\Users\21\Desktop\Новая папка (9)\OIP (3).jfif" alt="Фото 2">
+            </div>
+            <h2 class="section-title">Галерея</h2>
+            <div>
+                <img src="C:\Users\21\Desktop\Новая папка (9)\R (1).jfif" alt="Фото 3">
+                <img src="C:\Users\21\Desktop\Новая папка (9)\R (2).jfif" alt="Фото 3">
+                <img src="C:\Users\21\Desktop\Новая папка (9)\R.jfif" alt="Фото 3">
+                <img src="C:\Users\21\Desktop\Новая папка (9)\жених-и-невеста-си-ит-на-траве-в-парке-с-стек-ами-i-57312445.webp" alt="Фото 3">
+            </div>
+        </section>
+
+        <!-- Раздел "Событие" -->
+        <section id="event" class="event-info">
+            <h2 class="section-title">Событие</h2>
+            <p>Дата свадьбы: 12 июля 2024 года</p>
+            <p>Место проведения: тойхана "бал махаббат", Г кокшетау</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3371.3874966465632!2d69.29842775808586!3d53.30868268478123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x424c96096f54cfb3%3A0xbc165ff24941ebb0!2z0KDQtdGB0YLQvtGA0LDQvSDQkdCw0Lsg0JzQsNGF0LDQsdCw0YI!5e0!3m2!1sru!2skz!4v1733374151466!5m2!1sru!2skz" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <p>Время начала: 16:00</p>
+            <p>Мы приготовили для вас удивительный день с красивыми моментами, вкусной едой и незабываемыми воспоминаниями. Присоединяйтесь к нам!</p>
+        </section>
+
+        <!-- Раздел "Гостевая книга" -->
+        <section id="guestbook" class="guestbook">
+            <h2 class="section-title">Гостевая книга</h2>
+            <form action="submit_guestbook.php" method="POST">
+                <div class="form-group">
+                    <label for="name">Ваше имя:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Ваше сообщение:</label
